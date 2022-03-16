@@ -1,0 +1,405 @@
+<!DOCTYPE html>
+<html><!--<![endif]-->
+<head><meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+	<title>صيانة زانوسي المعتمد</title>
+	<!--[if IE]>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<![endif]--><meta name="description" content=""><meta name="viewport" content="width=device-width, initial-scale=1"><!-- Place favicon.ico and apple-touch-icon.png in the root directory -->
+	<link href="css/bootstrap.min.css" rel="stylesheet">
+	<link href="css/animations.css" rel="stylesheet">
+	<link href="css/fonts.css" rel="stylesheet">
+	<link href="css/main.css" id="color-switcher-link" rel="stylesheet"><script src="js/vendor/modernizr-2.6.2.min.js"></script><!--[if lt IE 9]>
+		<script src="js/vendor/html5shiv.min.js"></script>
+		<script src="js/vendor/respond.min.js"></script>
+		<script src="js/vendor/jquery-1.12.4.min.js"></script>
+	<![endif]-->
+	<style type="text/css">.msa_inline {
+	display: inline-block;
+	margin-left: 20px;
+}
+	</style>
+	<script type="text/javascript">
+	function showfield(name) {
+		var tv='<p class="contact-form-subject tv">';
+		tv+='<label for="appliance">اختر ماركة التلفزيون<span class="required">*</span> </label>';
+		tv+='<select style="direction: rtl;" name="dropdown" aria-required="true" id="" class="form-control" placeholder="اختر ماركة التلفزيون">';
+		tv+='<option selected="selected" class="holder">اختر ماركة التلفزيون</option>';
+		tv+='<option value="sony">سوني</option>';
+		tv+='<option value="toshiba">توشيبا</option>';
+		tv+='<option value="samsung">سامسونج</option>';
+		tv+='<option value="lg">إل جي</option>';
+		tv+='<option value="tornado">تورنيدو</option>';
+		tv+='<option value="panasonic">باناسونيك</option>';
+		tv+='<option value="philips">فيليبس</option>';
+		tv+='<option value="sharp">شارب</option>';
+		tv+='</select></p>';
+		
+		var refrigerator='<p class="contact-form-subject refrigerator">';
+		refrigerator+='<label for="appliance">اختر ماركة الثلاجة<span class="required">*</span> </label>';
+		refrigerator+='<select style="direction: rtl;" name="dropdown" aria-required="true" id="" class="form-control" placeholder="اختر ماركة الثلاجة">';
+		refrigerator+='<option selected="selected" class="holder">اختر ماركة الثلاجة</option>';
+		refrigerator+='<option value="admiral">أدميرال</option>';
+		refrigerator+='<option value="bosch">بوش</option>';
+		refrigerator+='<option value="candy">كاندي</option>';
+		refrigerator+='<option value="daewoo">دايو </option>';
+		refrigerator+='<option value="fresh">فريش</option>';
+		refrigerator+='<option value="frigidaire">فريجيدير</option>';
+		refrigerator+='<option value="generalelectric">جنرال إلكتريك</option>';
+		refrigerator+='<option value="goldi">جولدي</option>';
+		refrigerator+='<option value="indesit">إنديست</option>';
+		refrigerator+='<option value="kelvinator">كالفينيتور</option>';
+		refrigerator+='<option value="kiriazi">كريازي</option>';
+		refrigerator+='<option value="lg">إل جي</option>';
+		refrigerator+='<option value="magicchef">ماجيك شيف</option>';
+		refrigerator+='<option value="maytag">ماي تاج</option>';
+		refrigerator+='<option value="mila">ميلا</option>';
+		refrigerator+='<option value="philps">فيليبس</option>';
+		refrigerator+='<option value="samsung">سامسونج</option>';
+		refrigerator+='<option value="siemens">سيمينز</option>';
+		refrigerator+='<option value="toshiba">توشيبا</option>';
+		refrigerator+='<option value="unionaire">يونيون إير</option>';
+		refrigerator+='<option value="universal">يونيفرسال</option>';
+		refrigerator+='<option value="westinghouse">ويستنجهاوس</option>';
+		refrigerator+='<option value="whirlpool">ويرلبول</option>';
+		refrigerator+='<option value="whitepoint">وايت بوينت</option>';
+		refrigerator+='<option value="white-westinghouse">وايت وستنجهاوس</option>';
+		refrigerator+='<option value="whitewhale">وايت ويل</option>';
+		refrigerator+='<option value="zanussi">زانوسي</option>';		
+		refrigerator+='</select></p>';
+		
+		var washingmachine='<p class="contact-form-subject washingmachine">';
+		washingmachine+='<label for="appliance">اختر ماركة الغسالة<span class="required">*</span> </label>';
+		washingmachine+='<select style="direction: rtl;" name="dropdown" aria-required="true" id="" class="form-control" placeholder="اختر ماركة الغسالة">';
+		washingmachine+='<option selected="selected" class="holder">اختر ماركة الغسالة</option>';
+		washingmachine+='<option value="admiral">أدميرال</option>';
+		washingmachine+='<option value="bosch">بوش</option>';
+		washingmachine+='<option value="candy">كاندي</option>';
+		washingmachine+='<option value="daewoo">دايو </option>';
+		washingmachine+='<option value="fresh">فريش</option>';
+		washingmachine+='<option value="frigidaire">فريجيدير</option>';
+		washingmachine+='<option value="generalelectric">جنرال إلكتريك</option>';
+		washingmachine+='<option value="goldi">جولدي</option>';
+		washingmachine+='<option value="indesit">إنديست</option>';
+		washingmachine+='<option value="kelvinator">كالفينيتور</option>';
+		washingmachine+='<option value="kiriazi">كريازي</option>';
+		washingmachine+='<option value="lg">إل جي</option>';
+		washingmachine+='<option value="magicchef">ماجيك شيف</option>';
+		washingmachine+='<option value="maytag">ماي تاج</option>';
+		washingmachine+='<option value="mila">ميلا</option>';
+		washingmachine+='<option value="philps">فيليبس</option>';
+		washingmachine+='<option value="samsung">سامسونج</option>';
+		washingmachine+='<option value="siemens">سيمينز</option>';
+		washingmachine+='<option value="toshiba">توشيبا</option>';
+		washingmachine+='<option value="unionaire">يونيون إير</option>';
+		washingmachine+='<option value="universal">يونيفرسال</option>';
+		washingmachine+='<option value="westinghouse">ويستنجهاوس</option>';
+		washingmachine+='<option value="whirlpool">ويرلبول</option>';
+		washingmachine+='<option value="whitepoint">وايت بوينت</option>';
+		washingmachine+='<option value="white-westinghouse">وايت وستنجهاوس</option>';
+		washingmachine+='<option value="whitewhale">وايت ويل</option>';
+		washingmachine+='<option value="zanussi">زانوسي</option>';		
+		washingmachine+='</select></p>';
+		
+		if(name=='tv')document.getElementById('brand').innerHTML= tv;
+		else if(name=='refrigerator')document.getElementById('brand').innerHTML= refrigerator;
+		else if(name=='washingmachine')document.getElementById('brand').innerHTML= washingmachine;
+		else document.getElementById('brand').innerHTML='';
+		}
+</script>
+</head>
+<body><!--[if lt IE 9]>
+		<div class="bg-danger text-center">You are using an <strong>outdated</strong> browser. Please <a href="http://browsehappy.com/" class="highlight">upgrade your browser</a> to improve your experience.</div>
+	<![endif]--><!-- search modal -->
+<div aria-labelledby="search_modal" class="modal" id="search_modal" role="dialog" tabindex="-1"><button aria-label="Close" class="close" data-dismiss="modal" type="button"></button>
+<div class="widget widget_search">
+<form action="https://formspree.io/f/xeqngqkb" class="searchform search-form form-inline" method="get">
+<div class="form-group"><input class="form-control" id="modal-search-input" name="search" placeholder="Search keyword" type="text" value=""></div>
+<button class="theme_button" type="submit">Search</button></form>
+</div>
+</div>
+<!-- Unyson messages modal -->
+
+<div class="modal fade" id="messages_modal" role="dialog" tabindex="-1">
+<div class="fw-messages-wrap ls with_padding"><!-- Uncomment this UL with LI to show messages in modal popup to your user: --><!--		
+		<ul>
+			<li>Message To User</li>
+		</ul>
+		--></div>
+</div>
+<!-- eof .modal --><!-- wrappers for visual page editor and boxed version of template -->
+
+<div id="canvas">
+<div id="box_wrapper"><!-- template sections --><!-- Header Top Start -->
+<div class="container" style="background-color:#000000; width: 100%; margin-top: 0; margin-bottom: 0; margin-right: 0; margin-left: 0;">
+<div class="row" style="margin-top: 0; margin-bottom: 0;">
+<div class="col-md-8 col-sm-8" style="margin-top: 0; margin-bottom: 0;">
+<ul style="list-style: none;">
+	<li style="">
+        <span style="color: white; font-family: GE_SS_Two_Bold; font-size: 14px;">
+            
+        </span><span style="color:#FFFFFF;">
+            <b>16351</b>
+        <span style="font-family: GE_SS_Two_Bold; font-size: 14px;">
+        </span>
+        </span>
+        <font color="#ff0000">
+            <span style="font-size: 36px;">
+                
+            </span>
+        </font>
+        <font color="#ffffff" face="GE_SS_Two_Bold">
+            <span style="font-size: 14px;">:للحجز والاستعلام </span>
+        </font>
+    </li>
+</ul>
+</div>
+
+<div class="col-md-4 col-sm-4" style="margin-top: 0; margin-bottom: 0;">
+<ul>
+	<li class="msa_inline"></li>
+	<li class="msa_inline"></li>
+</ul>
+</div>
+</div>
+</div>
+<!-- Header Top End -->
+
+<header class="page_header header_white header_tall header_offset table_section columns_padding_0 toggle_menu_right">
+<div class="container-fluid msa-header-bg">
+<div class="row">
+<div class="col-lg-3 col-md-3"><a class="logo" href="index.html"><h2>  alitalia  </h2> </a></div>
+
+<div class="col-lg-3 col-md-3"><span>الخط الساخن <span style="font-family: 'Times New Roman'; font-size: 36px; color: red; font-weight: bold;"> 16351</span>خدمة 24 ساعة </span></div>
+
+<div class="col-lg-6 col-md-6 text-center"><!-- main nav start -->
+<nav class="mainmenu_wrapper" dir="rtl">
+<ul class="mainmenu nav sf-menu">
+	<li><a href="index.html">الرئيسية</a></li>
+	<li class="active"><a href="about.html">من نحن</a></li>
+	<li><a href="services.html">الخدمات</a></li>
+	<li><a href="contact.html">اتصل بنا</a></li>
+	<li><a href="appointment.html">احجز موعد </a></li>
+	<li><a href="jobs.html">وظائف</a></li>
+</ul>
+</nav>
+<!-- eof main nav --></div>
+</div>
+</div>
+</header>
+
+<section class="page_breadcrumbs cs parallax section_padding_top_65 section_padding_bottom_65">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 text-center">
+<h1 class="highlight" style="font-size: 40px;"><strong>احجز موعد</strong></h1>
+
+<ol class="breadcrumb">
+	<li class="active">احجز موعد</li>
+	<li><a href="appointment.html">الرئيسية </a></li>
+</ol>
+</div>
+</div>
+</div>
+</section>
+
+<section class="ls section_padding_top_100 section_padding_bottom_75">
+<div class="container">
+<div class="row">
+<div class="col-sm-12">
+<section class="ls ms" data-address="sydney, australia, Liverpool street" id="map"><!-- marker description and marker icon goes here -->
+<div class="map_marker_description">
+<h3></h3>
+
+<p></p>
+<!-- <iframe allowfullscreen="" frameborder="0" height="550" src="maps/embed-1.html?pb=!1m18!1m12!1m3!1d7296863.465139539!2d34.955407183957156!3d26.746877401500583!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x14368976c35c36e9%3A0x2c45a00925c4c444!2z2YXYtdix!5e0!3m2!1sar!2seg!4v1538421525950" style="border:0" width="1200"></iframe><img alt="" class="map_marker_icon" src="images/map_marker_icon.png"></div> -->
+</section>
+</div>
+</div>
+
+<div class="row topmargin_40">
+<div class="col-sm-4 to_animate" data-animation="pullDown">
+<div class="teaser text-center">
+<div class="teaser_icon highlight size_normal"></div>
+
+<p>جميع محافظات مصر<br>
+&nbsp;</p>
+</div>
+</div>
+
+<div class="col-sm-4 to_animate" data-animation="pullDown">
+<div class="teaser text-center">
+<div class="teaser_icon highlight size_normal"></div>
+
+<p></p>
+
+<p><span style="font-family: 'Times New Roman'; font-size: 36px; color: red; font-weight: bold;">16351</span><br>
+</p>
+
+<p></p>
+
+<p></p>
+</div>
+</div>
+
+<div class="col-sm-4 to_animate" data-animation="pullDown">
+<div class="teaser text-center">
+<div class="teaser_icon highlight size_normal"></div>
+
+<p>info@syana-egypt.online</p>
+</div>
+</div>
+</div>
+<!-- Contact from -->
+
+<section class="ls section_padding_top_100 section_padding_bottom_75">
+<div class="container"><!-- Contact from -->
+<div class="row">
+<div class="col-sm-12 to_animate">
+<p class="text-center" style="font-size: 20px;">برجاء ملء النموذج التالي</p>
+
+<form action="https://formspree.io/f/xeqngqkb" class="" method="post">
+<div class="row columns_padding_5">
+<div class="col-sm-2"></div>
+
+<div class="col-sm-8">
+<p class="contact-form-name"><label for="name">الاسم بالكامل <span class="required">*</span> </label> <input aria-required="true" class="form-control text-right" id="name" name="name" placeholder="الاسم بالكامل" size="30" type="text" value=""><x/p>
+
+<p class="contact-form-phone"><label for="phone">التليفون <span class="required">*</span> </label> <input aria-required="true" class="form-control text-right" id="phone" name="phone" placeholder="التليفون" size="30" type="text" value=""></p>
+
+<p class="contact-form-name"><label for="name">العنوان بالتفصيل <span class="required">*</span> </label> <input aria-required="true" class="form-control text-right" id="address" name="address" placeholder="العنوان بالتفصيل" size="30" type="text" value=""></p>
+
+<p class="contact-form-name"><label for="name">المواعيد المناسبة للزيارة <span class="required">*</span> </label> <input aria-required="true" class="form-control text-right" id="suitabletime" name="suitabletime" placeholder="المواعيد المناسبة للزيارة" size="30" type="text" value=""></p>
+
+<p class="contact-form-subject"><label for="appliance">نوع الجهاز المطلوب صيانته <span class="required">*</span> </label> <select aria-required="true" class="form-control" id="" name="dropdown" onchange="showfield(this.options[this.selectedIndex].value)" placeholder="نوع الجهاز" style="direction: rtl;"><option class="holder" selected="selected">اختر نوع الجهاز المطلوب صيانته</option><option value="tv">تلفزيون</option><option value="refrigerator">ثلاجة</option><option value="washingmachine">غسالة</option><option value="cooker">بوتاجاز</option><option value="heater">سخان</option><option value="dishwasher">غسالة أطباق</option> </select></p>
+
+<div id="brand"></div>/
+
+<p class="contact-form-message"><label for="message">وصف المشكلة أو العطل</label><textarea aria-required="true" class="form-control text-right" cols="45" id="description" name="message" placeholder="وصف المشكلة أو العطل" rows="9"></textarea></p>
+</div>
+
+<div class="col-sm-2"></div>
+</div>
+
+<div class="row">
+<div class="col-sm-12">
+<p class="contact-form-submit text-center topmargin_30"><button class="theme_button color2" id="contact_form_submit" name="contact_submit" type="submit">إرسال</button></p>
+</div>
+</div>
+</form>
+</div>
+</div>
+<!-- End of contact form --></div>
+</section>
+<!-- End of contact form --></div>
+</section>
+
+<footer class="page_footer ds ms">
+<div class="container">
+<div class="col-md-3 col-sm-6 to_animate" data-animation="fadeIn">
+<div class="widget widget_banner topmargin_30">
+<div class="vertical-item">
+<div class="media-links"></div>
+
+<div class="item-content">
+<h3>احصل على <span class="big highlight2">25%</span> خصم</h3>
+
+<p class="fontsize_20"><span class="grey">على</span> الصيانة</p>
+</div>
+</div>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 to_animate text-right" data-animation="fadeIn">
+<div class="widget widget_text">
+<h4 class="widget-title">مواعيد العمل</h4>
+
+<ul class="list1 no-bullets no-top-border no-bottom-border">
+	<li class="text-right"><span>نعمل على مدار 24 ساعة جميع أيام الأسبوع</span></li>
+	<li class="content-justify"></li>
+	<li class="content-justify"></li>
+</ul>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 clear-sm to_animate text-right" data-animation="fadeIn">
+<div class="widget widget_mailchimp">
+<h4 class="widget-title">أحدث الأخبار</h4>
+
+<p>اطلع على أحدث الأخبار والعروض</p>
+
+<form action="https://formspree.io/f/xeqngqkb" class="signup form-inline" method="get">
+<div class="form-group"><input class="mailchimp_email form-control" name="email" placeholder="البريد الإلكتروني" type="email"></div>
+<button class="theme_button" type="submit">Send</button>
+
+<div class="response"></div>
+</form>
+</div>
+</div>
+
+<div class="col-md-3 col-sm-6 to_animate text-right" data-animation="fadeIn">
+<h4 class="widget-title">أرقام صيانة المركز المعتمد</h4>
+
+<div class="media">
+<div class="media-body text-right">جميع محافظات مصر</div>
+
+<div class="media-right fontsize_14"></div>
+</div>
+
+<div class="media">
+<div class="media-body text-right">
+<p></p>
+
+<p></p>
+
+<p></p>
+</div>
+
+<div class="media-body text-right">
+<p></p>
+</div>
+<div class="media-body text-right">
+<p>01001122854<br/>01009922089<br/><p/><br/>
+</div>
+<div class="media-body text-right"><br/>
+			  16351
+			</div>
+</div>
+</div>
+</div>
+</footer>
+
+<section class="page_copyright ls">
+<div class="container">
+<div class="row">
+<div class="col-sm-12 text-center">
+<p class="bottommargin_10">&copy; Copyright 2021 All Rights Reserved</p>
+
+<p></p>
+</div>
+</div>
+</div>
+</section>
+</div>
+<!-- eof #box_wrapper --></div>
+<!-- eof #canvas -->
+
+<div id="callnowbutton"><a href="tel:16351">اتصل بنا</a></div>
+
+<div class="phonering-alo-phone phonering-alo-green phonering-alo-show" id="phonering-alo-phoneIcon">
+<div class="phonering-alo-ph-circle"></div>
+
+<div class="phonering-alo-ph-circle-fill"></div><a href="tel:16351" class="pps-btn-img" title="Liên hệ">
+ <div class="phonering-alo-ph-img-circle"></div>
+ </a>
+
+
+</div>
+<script src="js/compressed.js"></script><!-- <script src="js/jquery-ui.js"></script> --><script src="js/main.js"></script>
+	
+	<script >
+  document.addEventListener("contextmenu",function(free){
+    free.preventDefault();
+  })
+</script>
+	</body>
+<script>'undefined'=== typeof _trfq || (window._trfq = []);'undefined'=== typeof _trfd && (window._trfd=[]),_trfd.push({'tccl.baseHost':'secureserver.net'}),_trfd.push({'ap':'cpsh-oh'},{'server':'sg2plzcpnl487143'},{'id':'8219760'}) // Monitoring performance to make your website faster. If you want to opt-out, please contact web hosting support.</script><script src='https://img1.wsimg.com/tcc/tcc_l.combined.1.0.6.min.js'></script></html>
